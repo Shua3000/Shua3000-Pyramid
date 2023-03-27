@@ -25,9 +25,16 @@ public class Pyramid {
      * current 'row'.
      *
      * @param n the size of the pyramid.
-     * @return a string representation of the pyramid.
+     * @return a string representation of the pyrimid.
      */
     public String returnPyramid(int n){
-        return "";
+        StringBuilder pyramidString = new StringBuilder();
+        for(int i = 1; i <= n; i++){
+            for(int j = 1; j <= i; j++){
+                pyramidString.append("*");
+            }
+            pyramidString.append("\n");
+        }
+        return pyramidString.toString();
     }
 }
